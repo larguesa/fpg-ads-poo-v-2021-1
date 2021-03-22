@@ -1,0 +1,6 @@
+<%@ page pageEncoding="UTF-8" %>
+<b><a href="index.jsp">JSPf</a></b> |
+<a href="page1.jsp">Página 1</a> |
+<a href="page2.jsp">Página 2</a> |
+<a href="page3.jsp">Página 3</a>
+<hr/>
