@@ -1,0 +1,8 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+<h1>Java Attributes</h1>
+<a href="index.jsp">INDEX</a> |
+<a href="application.jsp">APPLCATION</a> |
+<a href="session.jsp">SESSION</a> | 
+<a href="request.jsp">REQUEST</a>
+<hr/>
