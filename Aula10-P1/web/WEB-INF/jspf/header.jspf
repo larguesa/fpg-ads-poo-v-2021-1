@@ -1,0 +1,32 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+
+<%
+    if(request.getParameter("session.login")!=null){
+        session.setAttribute("session.username", request.getParameter("session.username"));
+        response.sendRedirect(request.getRequestURI());
+    }
+    if(request.getParameter("session.logout")!=null){
+        session.removeAttribute("session.username");
+        response.sendRedirect(request.getRequestURI());
+    }
+%>
+
+<h1>GABARITO</h1>
+
+<%if(session.getAttribute("session.username")==null){%>
+    <form method="post">
+        Nome: <input type="text" name="session.username"/>
+        <input type="submit" name="session.login" value="Entrar"/>
+    </form>
+<%}else{%>
+    <form method="post">
+        Logado como <b><%= session.getAttribute("session.username") %></b>
+        <input type="submit" name="session.logout" value="Sair"/>
+    </form>
+    <hr/>
+    <a href="index.jsp">INDEX</a> |
+    <a href="disciplinas.jsp">DISCIPLINAS</a>
+<%}%>
+
+<hr/>
