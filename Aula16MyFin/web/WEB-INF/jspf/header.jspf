@@ -57,6 +57,8 @@
         <%if(role.equals("ADMIN")){%>
         | <a href="users.jsp">USUÁRIOS</a>
         <%}%>
+        | <a href="categories.jsp">CATEGORIAS</a>
+        | <a href="transactions.jsp">TRANSAÇÕES FINANCEIRAS</a>
     </form>
 <%}%>
 <hr/>
